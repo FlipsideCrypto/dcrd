@@ -1,0 +1,12 @@
+version: "3.7"
+
+
+services:
+  decred:
+    build: 
+      context: .
+      dockerfile: Dockerfile.alpine
+    command: dcrd
+    restart: unless-stopped
+
+
